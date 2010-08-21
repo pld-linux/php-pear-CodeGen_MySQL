@@ -1,10 +1,8 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		CodeGen
-%define		_subclass	MySQL
 %define		_status		beta
 %define		_pearname	CodeGen_MySQL
 %define		subver	RC1
-%define		rel		1
+%define		rel		2
 Summary:	%{_pearname} - abstract base package for MySQL code generators
 Summary(pl.UTF-8):	%{_pearname} - abstrakcyjny pakiet podstawowy dla generatorów kodu MySQL
 Name:		php-pear-%{_pearname}
@@ -15,11 +13,11 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
 # Source0-md5:	1a04df8c4e90c8d0932eb58ac22d67b1
 URL:		http://pear.php.net/package/CodeGen_MySQL/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-CodeGen >= 1.0.4
-Requires:	php-pear-PEAR >= 1.4.0b1
+Requires:	php-pear-CodeGen >= 1.0.6
+Requires:	php-pear-PEAR-core >= 1:1.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
