@@ -1,7 +1,7 @@
 %define		_status		beta
 %define		_pearname	CodeGen_MySQL
 %define		subver	RC1
-%define		rel		2
+%define		rel		3
 Summary:	%{_pearname} - abstract base package for MySQL code generators
 Summary(pl.UTF-8):	%{_pearname} - abstrakcyjny pakiet podstawowy dla generatorów kodu MySQL
 Name:		php-pear-%{_pearname}
